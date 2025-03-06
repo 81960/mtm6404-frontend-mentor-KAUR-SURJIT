@@ -7,41 +7,47 @@ body {
     color: #333;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #fff;
-}
 
+  header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
 .logo {
-    font-size: 32px;
+    font-size: 28px; /* Adjust size as needed */
     font-weight: bold;
-    color: #000;
+    text-transform: uppercase;
 }
-
-.nav-links {
+.nav-menu {
     display: flex;
-    list-style: none;
-}
+    justify-content: center;
 
-.nav-links li {
-    margin: 0 15px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #666;
-    font-size: 16px;
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: #f00;
 }
 
 
+    .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+      
+    }
+    .nav-links li a
+    {
+          text-decoration: none;
+          color:gray;
+    }
+.nav-links li a:hover
+{
+    text-decoration: underline;
+}
+    .menu-toggle {
+        display: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    
 /* Main Content */
 .container {
     display: grid;
@@ -143,3 +149,76 @@ footer {
     background-color: #fff;
     margin-top: 50px;
 }
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+
+    .hero {
+        flex-direction: column; /* Stack items in mobile view */
+    }
+        .hero img {
+        min-height: 225px;
+        width: 100vw;
+        height: auto;
+        border-radius: 0px;
+    }
+        .nav-menu {
+            position: fixed;
+            top: 0;
+            left: -100%;
+            width: 60%;
+            height: 100vh;
+            background: #fff;
+            transition: 0.3s;
+            padding: 20px;
+        }
+        .container {
+    display: flex;
+    padding:5px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+
+        .nav-menu.active {
+            left: 0;
+        }
+
+        .menu-toggle {
+            display: block;
+        }
+
+        .nav-links {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+
+   .articles {
+        display: flex;
+        flex-direction: column; /* Stack articles vertically */
+        gap: 20px; /* Space between articles */
+    }
+
+    .articles article {
+        display: flex;
+        flex-direction: column; /* Stack content inside */
+        align-items: flex-start;
+        width: 100%; /* Full width */
+        padding: 15px;
+        background: #fff; /* Adjust based on your design */
+        border-radius: 10px; /* Optional, for smooth edges */
+    }
+
+    .articles article img {
+        width: 100%; /* Ensure images fill the article width */
+        height: auto; /* Keep aspect ratio */
+    }
+
+    .articles article h2,
+    .articles article p {
+        margin: 10px 0; /* Space out text elements */
+    }
+    
+
+    }
