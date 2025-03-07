@@ -115,32 +115,58 @@ body {
 }
 
 /* Articles Section */
+.articles span {
+    color: red;
+    display: block;
+    font-size: 26pt;
+}
+
+
+/* Ensure articles remain in one line on mobile */
 .articles {
     display: flex;
-    justify-content: space-between;
-    padding: 50px;
+    flex-direction: row; /* Keep articles in a single row */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+    gap: 15px; /* Adjust spacing */
 }
+
 
 .articles article {
     display: flex;
-    gap: 15px;
+    flex-direction: row;
     align-items: center;
+    width: 100%; 
+    max-width: 31.2%; 
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px;
+    flex-shrink: 0; 
 }
 
-.articles img {
-    width: 80px;
+
+.articles article img {
+    width: 100px; 
+    height: auto;
     border-radius: 5px;
 }
 
-.articles h4 {
-    font-size: 1rem;
+.article-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px; 
 }
 
-.articles span {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: red;
+
+
+
+
+.closemenu
+{
+    display: none;
 }
+
 
 /* Footer */
 footer {
@@ -153,6 +179,11 @@ footer {
 /* Mobile Layout */
 @media (max-width: 768px) {
 
+.closemenu
+{
+    display: block;
+    text-align:right;
+}
     .hero {
         flex-direction: column; /* Stack items in mobile view */
     }
@@ -165,23 +196,26 @@ footer {
         .nav-menu {
             position: fixed;
             top: 0;
-            left: -100%;
+            right: -100%;
             width: 60%;
             height: 100vh;
             background: #fff;
             transition: 0.3s;
             padding: 20px;
         }
+      .articles h4 {
+        margin-top: 10px;
+    }
         .container {
     display: flex;
-    padding:5px;
+    padding:0px;
     flex-wrap: wrap;
     align-items: flex-start;
 }
 
 
         .nav-menu.active {
-            left: 0;
+            right: 0;
         }
 
         .menu-toggle {
@@ -205,20 +239,30 @@ footer {
         flex-direction: column; /* Stack content inside */
         align-items: flex-start;
         width: 100%; /* Full width */
+        max-width: 92%;
         padding: 15px;
         background: #fff; /* Adjust based on your design */
         border-radius: 10px; /* Optional, for smooth edges */
     }
 
     .articles article img {
-        width: 100%; /* Ensure images fill the article width */
-        height: auto; /* Keep aspect ratio */
-    }
+        width: 100%; 
+        height: auto;     }
 
     .articles article h2,
     .articles article p {
         margin: 10px 0; /* Space out text elements */
     }
     
+ .articles article {
+        flex-direction: row;
+    }
 
+    .articles article img {
+        width: 30%; /* Smaller width for image */
+    }
+
+    .article-content {
+        width: 70%; /* Adjust text width */
+    }
     }
