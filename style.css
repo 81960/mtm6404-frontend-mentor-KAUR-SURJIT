@@ -1,4 +1,4 @@
-/* General Styles */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -48,7 +48,7 @@ body {
     }
 
     
-/* Main Content */
+
 .container {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -61,24 +61,48 @@ body {
     flex-direction: column;
     gap: 20px;
 }
+p
+{
+    color:#949296;
+}
 
 .hero img {
     width: 100%;
     border-radius: 10px;
 }
 
-.hero-content h2 {
-    font-size: 2rem;
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-left {
+    flex: 1;
+}
+.hero-left h2 {
+    color: black;
+    /* margin: 0px; */
+    font-size: 4rem;
+    line-height: 52px;
     font-weight: bold;
 }
-
-.hero-content p {
-    font-size: 1rem;
-    color: #666;
+.hero-right {
+    flex: 1;
+    padding-left:40px;
+    padding-right:40px;
 }
 
+.hero-right p {
+    line-height: 36px;
+    margin-bottom: 41px;
+    color: #949296;
+}
+
+
 .btn {
-    background-color: black;
+    background-color: #f65b52;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -87,7 +111,7 @@ body {
     font-weight: bold;
 }
 
-/* Sidebar */
+
 .sidebar {
     background-color: black;
     color: white;
@@ -97,11 +121,11 @@ body {
 
 .sidebar h3 {
     color: orange;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
 }
 
 .sidebar article {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .sidebar h4 {
@@ -114,21 +138,21 @@ body {
     font-size: 1rem;
 }
 
-/* Articles Section */
+
 .articles span {
-    color: red;
+    color: #f65b52;
     display: block;
     font-size: 26pt;
 }
 
 
-/* Ensure articles remain in one line on mobile */
+
 .articles {
     display: flex;
-    flex-direction: row; /* Keep articles in a single row */
-    flex-wrap: nowrap; /* Prevent wrapping */
-    overflow-x: auto; /* Enable horizontal scrolling if needed */
-    gap: 15px; /* Adjust spacing */
+    flex-direction: row; 
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
+    gap: 15px; 
 }
 
 
@@ -168,7 +192,7 @@ body {
 }
 
 
-/* Footer */
+
 footer {
     text-align: center;
     padding: 20px;
@@ -176,7 +200,7 @@ footer {
     margin-top: 50px;
 }
 
-/* Mobile Layout */
+
 @media (max-width: 768px) {
 
 .closemenu
@@ -185,7 +209,7 @@ footer {
     text-align:right;
 }
     .hero {
-        flex-direction: column; /* Stack items in mobile view */
+        flex-direction: column; 
     }
         .hero img {
         min-height: 225px;
@@ -230,19 +254,19 @@ footer {
 
    .articles {
         display: flex;
-        flex-direction: column; /* Stack articles vertically */
-        gap: 20px; /* Space between articles */
+        flex-direction: column; 
+        gap: 20px; 
     }
 
     .articles article {
         display: flex;
-        flex-direction: column; /* Stack content inside */
+        flex-direction: column; 
         align-items: flex-start;
-        width: 100%; /* Full width */
+        width: 100%; 
         max-width: 92%;
         padding: 15px;
-        background: #fff; /* Adjust based on your design */
-        border-radius: 10px; /* Optional, for smooth edges */
+        background: #fff; 
+        border-radius: 10px;
     }
 
     .articles article img {
@@ -251,7 +275,7 @@ footer {
 
     .articles article h2,
     .articles article p {
-        margin: 10px 0; /* Space out text elements */
+        margin: 10px 0;
     }
     
  .articles article {
@@ -259,10 +283,10 @@ footer {
     }
 
     .articles article img {
-        width: 30%; /* Smaller width for image */
+        width: 30%; 
     }
 
     .article-content {
-        width: 70%; /* Adjust text width */
+        width: 70%; 
     }
     }
