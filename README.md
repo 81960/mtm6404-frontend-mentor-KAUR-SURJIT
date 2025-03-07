@@ -45,6 +45,13 @@ mtm6404-frontend-mentor-KAUR-SURJIT/
 │── script.js
 │── README.md
 ```
+## Screenshots
+### Desktop View
+![Desktop Layout](assets/design/desktop-design.png)
+
+### Mobile View
+![Mobile Layout](assets/images/mobile-design.png)
+
 
 ## Screenshots
 *(Add screenshots of the desktop and mobile versions here if possible)*
