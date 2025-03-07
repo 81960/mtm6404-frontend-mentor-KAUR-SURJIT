@@ -45,7 +45,7 @@ mtm6404-frontend-mentor-KAUR-SURJIT/
 │── script.js
 │── README.md
 ```
-## Screenshots
+## Screenshots Frontend Challange
 ### Desktop View
 ![Desktop Layout](design/desktop-design.jpg)
 
@@ -53,15 +53,15 @@ mtm6404-frontend-mentor-KAUR-SURJIT/
 ![Mobile Layout](design/mobile-design.jpg)
 
 
-## Screenshots
+## Screenshots 
 ### Desktop View
-![Desktop Layout](SS/desk1.png.jpg)
-![Desktop Layout](SS/desk2.png.jpg)
+![Desktop Layout](SS/desk1.png)
+![Desktop Layout](SS/desk2.png)
 ### Mobile View
 ![Mobile Layout](SS/mob1.png)
 ![Mobile Layout](SS/mob2.png)
-## Live Demo
-*(If hosted, provide a link to the live version of the project)*
+
+
 
 ## Acknowledgments
 - [Frontend Mentor](https://www.frontendmentor.io/) for the challenge.
