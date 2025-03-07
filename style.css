@@ -15,7 +15,7 @@ body {
         padding: 20px;
     }
 .logo {
-    font-size: 28px; /* Adjust size as needed */
+    font-size: 28px; 
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -103,14 +103,15 @@ p
 
 .btn {
     background-color: #f65b52;
-    color: white;
-    padding: 10px 20px;
+    color: #040404;
+    padding: 16px 40px;
     border: none;
     cursor: pointer;
+    font-size: 1.2rem;
     text-transform: uppercase;
     font-weight: bold;
+    /* padding: 29px; */
 }
-
 
 .sidebar {
     background-color: black;
@@ -203,13 +204,31 @@ footer {
 
 @media (max-width: 768px) {
 
+.logo {
+    font-size: 36px;
+}
 .closemenu
 {
     display: block;
     text-align:right;
 }
+.hero-content
+{
+    flex-direction: column;
+    padding: 10px;
+}
+    
+
     .hero {
         flex-direction: column; 
+    }
+    .hero-right
+    {
+        padding:0px;
+    }
+    .hero-left h2
+    {
+        margin:0px;
     }
         .hero img {
         min-height: 225px;
