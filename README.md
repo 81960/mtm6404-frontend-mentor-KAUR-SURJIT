@@ -47,10 +47,10 @@ mtm6404-frontend-mentor-KAUR-SURJIT/
 ```
 ## Screenshots
 ### Desktop View
-![Desktop Layout](../../assets/design/desktop-design.png)
+![Desktop Layout](/../../assets/design/desktop-design.png)
 
 ### Mobile View
-![Mobile Layout](../../assets/images/mobile-design.png)
+![Mobile Layout](/../../assets/images/mobile-design.png)
 
 
 ## Screenshots
