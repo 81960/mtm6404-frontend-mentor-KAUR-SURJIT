@@ -54,8 +54,12 @@ mtm6404-frontend-mentor-KAUR-SURJIT/
 
 
 ## Screenshots
-*(Add screenshots of the desktop and mobile versions here if possible)*
-
+### Desktop View
+![Desktop Layout](SS/desk1.png.jpg)
+![Desktop Layout](SS/desk2.png.jpg)
+### Mobile View
+![Mobile Layout](SS/mob1.png)
+![Mobile Layout](SS/mob2.png)
 ## Live Demo
 *(If hosted, provide a link to the live version of the project)*
 
