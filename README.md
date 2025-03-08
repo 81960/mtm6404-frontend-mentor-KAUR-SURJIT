@@ -4,7 +4,7 @@
 
 ### Student Information
 - **Name:** Surjit Kaur  
-- **Student Number:** 81960
+- **Student Number:** 041133515
 - **GitHub Repository:** [mtm6404-frontend-mentor-KAUR-SURJIT](https://github.com/81960/mtm6404-frontend-mentor-KAUR-SURJIT)
 
 ## Challenge Overview
